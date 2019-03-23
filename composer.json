@@ -1,0 +1,7 @@
+{
+    "require": {
+        "tipsyphp/tipsy": "^0.11.12",
+        "delight-im/auth": "^8.1",
+        "sunaryohadi/ezsql-mysqli": "^1.2"
+    }
+}

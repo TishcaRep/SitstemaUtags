@@ -1,0 +1,11 @@
+<?php global $site_url; ?>
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><?php echo !empty($GLOBALS['title']) ? $GLOBALS['title'] : ''; ?></title>
+  </head>
+  <body>
+    <?= $this->content; ?>
+  </body>
+</html>
