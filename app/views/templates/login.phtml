@@ -26,6 +26,9 @@
   <body class="landing-page">
     <?= $this->content; ?>
     <!-- JS Scripts -->
+    <script type="text/javascript">
+      var ajaxurl="<?php echo $site_url,'ajax'; ?>"
+    </script>
     <script src="<?=$site_url?>assets/sitio/js/jquery-3.2.1.js"></script>
     <script src="<?=$site_url?>assets/sitio/js/jquery.appear.js"></script>
     <script src="<?=$site_url?>assets/sitio/js/jquery.mousewheel.js"></script>
@@ -62,5 +65,5 @@
     <script src="<?=$site_url?>assets/sitio/js/base-init.js"></script>
     <script defer src="<?=$site_url?>assets/sitio/fonts/fontawesome-all.js"></script>
     <script src="<?=$site_url?>assets/sitio/Bootstrap/dist/js/bootstrap.bundle.js"></script>
-
+    <script src="<?=$site_url?>assets/sitio/js/acciones.js"></script>
     </body>
