@@ -1,4 +1,4 @@
-<?php global $site_url; ?>
+<?php global $site_url;?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -7,7 +7,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta http-equiv="x-ua-compatible" content="ie=edge">
   	<!-- Main Font -->
-  	<script src="<?=$site_url?>sitio/js/webfontloader.min.js"></script>
+  	<script src="<?=$site_url?>assets/sitio/js/webfontloader.min.js"></script>
   	<script>
   		WebFont.load({
   			google: {
@@ -16,54 +16,51 @@
   		});
   	</script>
   	<!-- Bootstrap CSS -->
-  	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-reboot.css">
-  	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap.css">
-  	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-grid.css">
+  	<link rel="stylesheet" type="text/css" href="<?=$site_url?>assets/sitio/Bootstrap/dist/css/bootstrap-reboot.css">
+  	<link rel="stylesheet" type="text/css" href="<?=$site_url?>assets/sitio/Bootstrap/dist/css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="<?=$site_url?>assets/sitio/Bootstrap/dist/css/bootstrap-grid.css">
   	<!-- Main Styles CSS -->
-  	<link rel="stylesheet" type="text/css" href="css/main.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
+  	<link rel="stylesheet" type="text/css" href="<?=$site_url?>assets/sitio/css/main.min.css">
+  	<link rel="stylesheet" type="text/css" href="<?=$site_url?>assets/sitio/css/fonts.min.css">
   </head>
-  <body>
-
+  <body class="landing-page">
     <?= $this->content; ?>
-    <?=$site_url?>
-
     <!-- JS Scripts -->
-    <script src="<?=$site_url?>sitio/js/jquery-3.2.1.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.appear.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.mousewheel.js"></script>
-    <script src="<?=$site_url?>sitio/js/perfect-scrollbar.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.matchHeight.js"></script>
-    <script src="<?=$site_url?>sitio/js/svgxuse.js"></script>
-    <script src="<?=$site_url?>sitio/js/imagesloaded.pkgd.js"></script>
-    <script src="<?=$site_url?>sitio/js/Headroom.js"></script>
-    <script src="<?=$site_url?>sitio/js/velocity.js"></script>
-    <script src="<?=$site_url?>sitio/js/ScrollMagic.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.waypoints.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.countTo.js"></script>
-    <script src="<?=$site_url?>sitio/js/popper.min.js"></script>
-    <script src="<?=$site_url?>sitio/js/material.min.js"></script>
-    <script src="<?=$site_url?>sitio/js/bootstrap-select.js"></script>
-    <script src="<?=$site_url?>sitio/js/smooth-scroll.js"></script>
-    <script src="<?=$site_url?>sitio/js/selectize.js"></script>
-    <script src="<?=$site_url?>sitio/js/swiper.jquery.js"></script>
-    <script src="<?=$site_url?>sitio/js/moment.js"></script>
-    <script src="<?=$site_url?>sitio/js/daterangepicker.js"></script>
-    <script src="<?=$site_url?>sitio/js/simplecalendar.js"></script>
-    <script src="<?=$site_url?>sitio/js/fullcalendar.js"></script>
-    <script src="<?=$site_url?>sitio/js/isotope.pkgd.js"></script>
-    <script src="<?=$site_url?>sitio/js/ajax-pagination.js"></script>
-    <script src="<?=$site_url?>sitio/js/Chart.js"></script>
-    <script src="<?=$site_url?>sitio/js/chartjs-plugin-deferred.js"></script>
-    <script src="<?=$site_url?>sitio/js/circle-progress.js"></script>
-    <script src="<?=$site_url?>sitio/js/loader.js"></script>
-    <script src="<?=$site_url?>sitio/js/run-chart.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.magnific-popup.js"></script>
-    <script src="<?=$site_url?>sitio/js/jquery.gifplayer.js"></script>
-    <script src="<?=$site_url?>sitio/js/mediaelement-and-player.js"></script>
-    <script src="<?=$site_url?>sitio/js/mediaelement-playlist-plugin.min.js"></script>
-    <script src="<?=$site_url?>sitio/js/base-init.js"></script>
-    <script defer src="fonts/fontawesome-all.js"></script>
-    <script src="Bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery-3.2.1.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.appear.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.mousewheel.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/perfect-scrollbar.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.matchHeight.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/svgxuse.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/imagesloaded.pkgd.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/Headroom.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/velocity.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/ScrollMagic.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.waypoints.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.countTo.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/popper.min.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/material.min.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/bootstrap-select.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/smooth-scroll.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/selectize.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/swiper.jquery.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/moment.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/daterangepicker.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/simplecalendar.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/fullcalendar.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/isotope.pkgd.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/ajax-pagination.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/Chart.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/chartjs-plugin-deferred.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/circle-progress.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/loader.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/run-chart.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.magnific-popup.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/jquery.gifplayer.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/mediaelement-and-player.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/mediaelement-playlist-plugin.min.js"></script>
+    <script src="<?=$site_url?>assets/sitio/js/base-init.js"></script>
+    <script defer src="<?=$site_url?>assets/sitio/fonts/fontawesome-all.js"></script>
+    <script src="<?=$site_url?>assets/sitio/Bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     </body>
