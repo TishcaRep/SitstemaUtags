@@ -98,7 +98,7 @@ class Request {
 
 					$url = preg_replace('/^'.str_replace('/','\\/',''.$dir).'/','',$request);
 					$dir = dirname($_SERVER['SCRIPT_NAME']);
-					$url = '/';//preg_replace('/^'.str_replace('/','\\/',''.$dir).'/','',$url)
+					$url = preg_replace('/^'.str_replace('/','\\/',''.$dir).'/','',$url);
 					$url = substr($url, 0, 1) == '/' ? $url : '/'.$url;
 					$this->_base = substr($dir, -1) == '/' ? $dir : $dir.'/';
 				}

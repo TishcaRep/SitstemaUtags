@@ -1,7 +1,7 @@
 <?php
 $rutes->home(function($View, $Params, $Scope){
     global $title;
-    $title = _('Inicio');
+    $title = _('Login');
     $View->config(['layout' => 'templates/index']);
     $View->display('views/index');
 });
