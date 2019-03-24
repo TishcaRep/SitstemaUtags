@@ -96,7 +96,7 @@ Tipsy::middleware(function($Request) {
     	}
     }
 	//Ajax Securitys
-	if(strpos($Request->path(), 'ajax') !== FALSE && !in_array($Request->path(),['ajax/sistema/usuarios/ingresar'])){
+	if(strpos($Request->path(), 'ajax') !== FALSE && !in_array($Request->path(),['ajax/Login'])){
 		if(id() == 0)
 			redirect(site_url('404'));
 	}

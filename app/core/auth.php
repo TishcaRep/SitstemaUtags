@@ -1,7 +1,7 @@
 <?php
 
 //Registrar
-function  register($correo, $pass, $role = 'user' ,$usuario = null, $verifica = false, $extra = []){
+function  register($correo, $pass,$usuario = null, $verifica = false, $extra = []){
     global $tishdb, $auth, $token;
     try {
         if($verifica){
@@ -12,7 +12,6 @@ function  register($correo, $pass, $role = 'user' ,$usuario = null, $verifica = 
             $id = $auth->register($correo, $pass, $usuario);
         }
         if(count($extra)){
-            $extra['role'] = $role;
             $tishdb->update('users', $extra, compact('id'));
         } else {
             $tishdb->update('users', compact('role'), compact('id'));

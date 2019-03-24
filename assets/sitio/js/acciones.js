@@ -8,13 +8,11 @@ $(document).ready(function(){
 		$.post(ajaxurl + '/' + url, data).then(function(res){
 			//loadingApp.desactivar();
 			if(res.error){
-				//swal('Error', res.mensaje, 'error');
+			     swal('Error', res.message, 'error');
 			} else {
-			  /*swal('Éxito', res.mensaje, 'success').then(function(){
-					$('.modal').modal('hide');
-					$('.tabla-ajax').bootgrid('reload');
+			  swal('Éxito', res.mensaje, 'success').then(function(){
 					location.href = res.url;
-				});*/
+				});
 			}
 		}).fail(function(){
 			//loadingApp.desactivar();

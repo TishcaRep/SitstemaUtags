@@ -1,4 +1,4 @@
 <?php
 $rutes->post('ajax/Login/',function(){
-echo "hola";
+  require_once APPPATH.'/ajax/ingresar/ingresar.php';
 });
