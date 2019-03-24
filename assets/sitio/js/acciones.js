@@ -10,7 +10,7 @@ $(document).ready(function(){
 			if(res.error){
 			     swal('Error', res.message, 'error');
 			} else {
-			  swal('Éxito', res.mensaje, 'success').then(function(){
+			  swal('Éxito', res.message, 'success').then(function(){
 					location.href = res.url;
 				});
 			}

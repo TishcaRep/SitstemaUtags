@@ -88,10 +88,10 @@ Tipsy::middleware(function($Request) {
 
 //Check Access
 Tipsy::middleware(function($Request) {
-    if ($Request->loc() == 'admin') {
-    	if(!in_array($Request->path(),['admin/ingresar'])){
-    		if(tk_id() == 0){
-    			redirect(site_url('admin/login'));
+    if ($Request->loc() == 'dashboard') {
+    	if(!in_array($Request->path(),['/'])){
+    		if(id() == 0){
+    			redirect(site_url());
     		}
     	}
     }

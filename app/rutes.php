@@ -15,3 +15,4 @@ $rutes->otherwise(function($View){
 });
 
 require_once('routes/Login.php');
+require_once('routes/Inicio.php');

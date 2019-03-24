@@ -11,11 +11,11 @@ function  register($correo, $pass,$usuario = null, $verifica = false, $extra = [
         } else {
             $id = $auth->register($correo, $pass, $usuario);
         }
-        if(count($extra)){
+        /*if(count($extra)){
             $tishdb->update('users', $extra, compact('id'));
         } else {
             $tishdb->update('users', compact('role'), compact('id'));
-        }
+        }*/
         return ($verifica) ? array('error' => FALSE, 'id'=>$id, 'token' => $token) : array('error' => FALSE, 'id' => $id);
     }
     catch (\Delight\Auth\InvalidEmailException $e) {
